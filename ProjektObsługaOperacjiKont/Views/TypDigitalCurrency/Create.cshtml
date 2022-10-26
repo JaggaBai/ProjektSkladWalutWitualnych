@@ -1,0 +1,16 @@
+﻿@model TypDigitalCurrency
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Typ jednostki rozliczeniowej";
+}
+<h1>Dodaj swoją wirtualną walutę do rozliczeń</h1>
+<form asp-controller = "TypDigitalCurrency" asp-action="Create">
+    <div class="mb-3 ">
+        <label for=" NazwaTypu" class="form-label">Jednostka rozliczeniowa</label>
+        <input type="text" id="NazwaTypu" name=" NazwaTypu" class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-outline-primary btn-sm">Dodaj walutę</button>
+
+</form>
